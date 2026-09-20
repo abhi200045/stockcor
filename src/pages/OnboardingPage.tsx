@@ -310,7 +310,7 @@ export default function OnboardingPage() {
               <Check className="h-7 w-7 text-success" />
             </div>
             <CardTitle className="text-2xl">You're all set</CardTitle>
-            <CardDescription>Your MetalOps workspace is ready.</CardDescription>
+            <CardDescription>Your StockCor workspace is ready.</CardDescription>
           </CardHeader>
           <CardContent>
             <Button onClick={() => navigate('/app')} className="w-full" size="lg">
@@ -330,7 +330,7 @@ export default function OnboardingPage() {
           <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary text-primary-foreground">
             <ShieldCheck className="h-4.5 w-4.5" />
           </div>
-          <span className="text-lg font-semibold tracking-tight">METALOPS</span>
+          <span className="text-lg font-semibold tracking-tight">STOCKCOR</span>
         </div>
 
         {/* Stepper */}

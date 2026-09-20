@@ -26,7 +26,7 @@ export function useAuthActions() {
       return false;
     }
     if (data.user) {
-      toast({ title: 'Account created', description: 'Welcome to MetalOps. Complete onboarding to begin.' });
+      toast({ title: 'Account created', description: 'Welcome to StockCor. Complete onboarding to begin.' });
       return true;
     }
     return false;

@@ -53,7 +53,7 @@ export default function AuthPage() {
             <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-accent text-accent-foreground">
               <ShieldCheck className="h-5 w-5" />
             </div>
-            <span className="text-xl font-semibold tracking-tight">METALOPS</span>
+            <span className="text-xl font-semibold tracking-tight">STOCKCOR</span>
           </div>
           <div className="space-y-6">
             <h1 className="text-4xl font-semibold leading-tight text-balance">
@@ -93,7 +93,7 @@ export default function AuthPage() {
               <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary text-primary-foreground">
                 <ShieldCheck className="h-4.5 w-4.5" />
               </div>
-              <span className="text-lg font-semibold tracking-tight">METALOPS</span>
+              <span className="text-lg font-semibold tracking-tight">STOCKCOR</span>
             </div>
 
             <Card>

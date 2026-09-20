@@ -33,7 +33,7 @@ export default function AppLayout() {
         <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary text-primary-foreground">
           <ShieldCheck className="h-4 w-4" />
         </div>
-        <span className="text-base font-semibold tracking-tight">METALOPS</span>
+        <span className="text-base font-semibold tracking-tight">STOCKCOR</span>
       </div>
 
       {/* Nav */}
@@ -127,7 +127,7 @@ export default function AppLayout() {
             <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-primary text-primary-foreground">
               <ShieldCheck className="h-3.5 w-3.5" />
             </div>
-            <span className="font-semibold tracking-tight">METALOPS</span>
+            <span className="font-semibold tracking-tight">STOCKCOR</span>
           </div>
           {organization?.is_demo && (
             <Badge variant="outline" className="ml-auto text-warning border-warning/40">

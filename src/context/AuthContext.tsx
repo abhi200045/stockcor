@@ -2,8 +2,13 @@ import { createContext, useContext, useEffect, useState, type ReactNode } from '
 import type { Organization, OrgMember, Role } from '@/lib/types';
 import { supabase } from '@/lib/supabase';
 
+interface AppUser {
+  id: string | null;
+  email?: string;
+}
+
 interface AuthContextValue {
-  user: null;
+  user: AppUser | null;
   session: null;
   loading: boolean;
   member: OrgMember | null;
@@ -14,7 +19,7 @@ interface AuthContextValue {
 }
 
 const AuthContext = createContext<AuthContextValue>({
-  user: null,
+  user: { id: null },
   session: null,
   loading: true,
   member: null,
@@ -64,7 +69,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   return (
     <AuthContext.Provider
       value={{
-        user: null,
+        user: { id: null },
         session: null,
         loading,
         member,

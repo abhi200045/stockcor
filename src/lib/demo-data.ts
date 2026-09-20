@@ -2,7 +2,7 @@ import { supabase } from '@/lib/supabase';
 import { fineWeight } from '@/lib/calc';
 import { logAudit } from '@/lib/audit';
 
-export async function seedDemoData(orgId: string, userId: string): Promise<{ success: boolean; error?: string }> {
+export async function seedDemoData(orgId: string, userId: string | null): Promise<{ success: boolean; error?: string }> {
   try {
     // Check if demo data already exists
     const { count } = await supabase.from('transactions').select('id', { count: 'exact', head: true }).eq('org_id', orgId);
